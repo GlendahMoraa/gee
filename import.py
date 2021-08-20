@@ -20,8 +20,8 @@ tickerData = yf.Ticker(tickerSymbol)
 ticherdf = tickerData.history(Period = 'id', start = '2010-5-31', end = '2020-5-31')
 
 
-st.write('1. Closing price')
+st.write('1. Closing prices')
 st.line_chart(ticherdf.Close)
 
-st.write('2. The volume')
+st.write('2. The volumes')
 st.line_chart(ticherdf.Volume)
